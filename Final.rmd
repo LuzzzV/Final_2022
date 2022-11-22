@@ -67,7 +67,7 @@ Males who received the placebo are 2.18 times more likely to contract Covid91 th
 
 ### Discussion and Conclusion
 
-Based on the data above, among the males who contracted Covid91 68.44% received the placebo and 31.56% received the treatment. According to the data, among the males who received the placebo, the odds that are that they are 2.18 times more likely to contract Covid91 than males who received the treatment.  
+Based on the data above, among the males who contracted Covid91 68.44% received the placebo and 31.56% received the treatment. According to the data, among the males who received the placebo, the odds are that they are 2.18 times more likely to contract Covid91 than males who received the treatment.  
 
 
 ## Females
@@ -111,6 +111,11 @@ Chi Squared test has a p-value of 0.005747 which is less than 0.05 meaning we re
 The Fisher's Test has a p-value of 0.004887 which is less than 0.05 meaning we reject the null hypothesis. We conclude that the treatment does have an effect on females.
 
 Females who received the placebo are 0.74 times more likely to contract Covid91 than females who received the treatment.
+
+### Discussion and Conclusion
+
+Based on the data above, among the females who contracted Covid91 42.82% received the placebo and 57.18% received the treatment. According to the data, among the females who received the placebo, the odds are that they are 0.74 times more likely to contract Covid91 than females who received the treatment.
+
 
 ## LGBTQ
 
