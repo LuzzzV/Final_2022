@@ -38,6 +38,16 @@ barchartGC(~infected + treatment,data=malesdata, type="percent")
 
 Based on the graph above, among the men who contracted Covid91 about twice as many males that received the placebo as received the Covid91 treatment. The graph suggest that the treatment is effective for males.
 
+
+### Numerical Description
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=malesdata)
+rowPerc(table1)
+colPerc(table1)
+```
+According to the numerical data, among the males that contracted Covid91 68.44% received the placebo, and 31.56% of males received the  treatment. The data demonstrates the treatment is effective for males.
+
 ## Females
 
 
