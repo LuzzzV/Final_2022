@@ -134,6 +134,7 @@ barchartGC(~infected + treatment,data=lgbtqdata, type="percent")
 
 
 
+
 ## Druggies
 
 
