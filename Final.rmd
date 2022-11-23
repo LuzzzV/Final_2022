@@ -135,6 +135,7 @@ barchartGC(~infected + treatment,data=lgbtqdata, type="percent")
 Based on the graph above, among the LGBTQ community those who contracted Covid91 about 10% more of them received the placebo as received the Covid91 treatment. The graph suggest that the treatment is effective for the LGBTQ community.
 
 
+
 ## Druggies
 
 
