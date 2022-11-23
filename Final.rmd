@@ -118,21 +118,23 @@ Based on the data above, among the females who contracted Covid91 42.82% receive
 
 
 ## LGBTQ
+
 ```{r}
-lgbtqdata=filter(FinalData,LGBTQ==LGBTQ)
+lgbtqdata=filter(FinalData,LGBTQ=="gay")
 ```
 
 $H_0$: The treatment has no effect on the LGBTQ community.  
 $H_A$: The treatment has a significant effect on the LGBTQ community.
 
 ### Graphical Description
+
 ```{r}
 barchartGC(~infected + treatment,data=lgbtqdata)
 barchartGC(~infected + treatment,data=lgbtqdata, type="percent")
 
 ```
 
-Based on the graph above, among the LGBTQ community those who contracted Covid91 about 10% more of them received the placebo as received the Covid91 treatment. The graph suggest that the treatment is effective for the LGBTQ community.
+Based on the graph above, among the LGBTQ community those who contracted Covid91 about more than 80% of them received the Covid91 treatment as received the placebo. The graph suggest that the treatment not effective for the LGBTQ community.
 
 
 ### Numerical Description
@@ -142,7 +144,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-According to the numerical data, among the LGBTQ community those that contracted Covid91 55.56% of them received the placebo, and 44.44% of them received the  treatment. The data demonstrates the treatment is effective for the LGBTQ community.
+According to the numerical data, among the LGBTQ community those that contracted Covid91 13.33% of them received the placebo, and 86.67% of them received the  treatment. The data demonstrates the treatment is not effective for the LGBTQ community.
 
 
 ### Inferential Results
@@ -152,14 +154,14 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-Chi Squared test has a p-value of 0.004136 which is less than 0.05 meaning we reject the null hypothesis. We conclude that the treatment does have an effect on the LGBTQ community.
-The Fisher's Test has a p-value of 0.003736 which is less than 0.05 meaning we reject the null hypothesis. We conclude that the treatment does have an effect on the LGBTQ community.  
-Those in the LGBTQ community who received the placebo are 1.25 times more likely to contract Covid91 than those in the LGBTQ community who received the treatment.
+Chi Squared test has a p-value of 0.0000001104 which is less than 0.05 meaning we reject the null hypothesis. We conclude that the treatment does not have an effect on the LGBTQ community.
+The Fisher's Test has a p-value of 0.00000001244 which is less than 0.05 meaning we reject the null hypothesis. We conclude that the treatment does not have an effect on the LGBTQ community.  
+Those in the LGBTQ community who received the placebo are 0.16 times more likely to contract Covid91 than those in the LGBTQ community who received the treatment.
 
 
 ### Discussion and Conclusion
 
-Based on the data above, among the LGBTQ community those who contracted Covid91 55.56% received the placebo and 44.44% received the treatment. According to the data, among those in the LGBTQ community those who received the placebo, the odds are that they are 1.25 times more likely to contract Covid91 than those in the LGBTQ community who received the treatment.
+Based on the data above, among the LGBTQ community those who contracted Covid91 13.33% received the placebo and 86.67% received the treatment. According to the data, among those in the LGBTQ community those who received the placebo, the odds are that they are 0.16 times more likely to contract Covid91 than those in the LGBTQ community who received the treatment.
 
 
 ## Druggies
@@ -170,6 +172,16 @@ druggiesdata=filter(FinalData,DrugUser==DrugUser)
 
 $H_0$: The treatment has no effect on drug users.  
 $H_A$: The treatment has a significant effect on drug users.
+
+
+### Graphical Description
+
+```{r}
+barchartGC(~infected + treatment,data=druggiesdata)
+barchartGC(~infected + treatment,data=druggiesdata, type="percent")
+
+```
+
 
 
 # Overall Results and Conclusions
