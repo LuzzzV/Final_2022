@@ -184,4 +184,5 @@ barchartGC(~infected + treatment,data=druggiesdata, type="percent")
 
 
 
+
 # Overall Results and Conclusions
