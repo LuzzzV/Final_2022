@@ -67,7 +67,7 @@ Males who received the placebo are 2.18 times more likely to contract Covid91 th
 
 ### Discussion and Conclusion
 
-Based on the data above, among the males who contracted Covid91 68.44% received the placebo and 31.56% received the treatment. According to the data, among the males who received the placebo, the odds are that they are 2.18 times more likely to contract Covid91 than males who received the treatment.  
+Based on the data above, among the males who contracted Covid91 68.44% received the placebo and 31.56% received the treatment. According to the data, among the males who received the placebo, the odds are that they are 2.18 times more likely to contract Covid91 than males who received the treatment, therefore we reject the null hypothesis.
 
 
 ## Females
@@ -114,7 +114,7 @@ Females who received the placebo are 0.74 as likely to contract Covid91 than fem
 
 ### Discussion and Conclusion
 
-Based on the data above, among the females who contracted Covid91 42.82% received the placebo and 57.18% received the treatment. According to the data, among the females who received the placebo, the odds are that they are 0.74 times as likely to contract Covid91 than females who received the treatment, meaning yes the treatment has a negative effect.
+Based on the data above, among the females who contracted Covid91 42.82% received the placebo and 57.18% received the treatment. According to the data, among the females who received the placebo, the odds are that they are 0.74 times as likely to contract Covid91 than females who received the treatment, meaning yes the treatment has a negative effect therefore we reject the null hypothesis.
 
 
 ## LGBTQ
@@ -161,7 +161,7 @@ Those in the LGBTQ community who received the placebo are 0.16 times as likely t
 
 ### Discussion and Conclusion
 
-Based on the data above, among the LGBTQ community those who contracted Covid91 13.33% received the placebo and 86.67% received the treatment. According to the data, among those in the LGBTQ community those who received the placebo, the odds are that they are 0.16 times more likely to contract Covid91 than those in the LGBTQ community who received the treatment.
+Based on the data above, among the LGBTQ community those who contracted Covid91 13.33% received the placebo and 86.67% received the treatment. According to the data, among those in the LGBTQ community those who received the placebo, the odds are that they are 0.16 times more likely to contract Covid91 than those in the LGBTQ community who received the treatment. Therefore we reject the null hypothesis since the treatment has a significant negative effect on the LGBTQ community since it makes them more susceptible to contracting Covid 91.
 
 
 ## Druggies
@@ -194,5 +194,23 @@ colPerc(table1)
 ```
 
 According to the numerical data, among the drug users that contracted Covid91 16.67% of them received the placebo, and 83.33% of them received the  treatment. The data demonstrates that the treatment is not effective for drug users.  
+
+
+### Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+Chi Squared test has a p-value of 0.000001419 which is less than 0.05 meaning we reject the null hypothesis. We conclude that the treatment does have an effect on drug users.
+The Fisher's Test has a p-value of 0.0000003119 which is less than 0.05 meaning we reject the null hypothesis. We conclude that the treatment does have an effect on drug users.  
+Drug users who received the placebo are 0.21 times as likely to contract Covid91 than the drug users who received the treatment, meaning the treatment has a negative effect on drug users.
+
+
+### Discussion and Conclusion
+
+Based on the data above, among the drug users who contracted Covid91 16.67% of drug users received the placebo and 83.33% of drug users received the treatment. According to the data, among the drug users who received the placebo, the odds are that they are 0.21 times more likely to contract Covid91 than the drug users who received the treatment.Therefore we reject the null hypothesis since the treatment has a significant negative effect on drug users since it makes them more susceptible to contracting Covid 91.
 
 # Overall Results and Conclusions
