@@ -193,6 +193,6 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-According to the numerical data, among the drug users that contracted Covid91 16.67% of them received the placebo, and 83.33% of them received the  treatment. The data demonstrates that the treatment is not effective for drug users.
+According to the numerical data, among the drug users that contracted Covid91 16.67% of them received the placebo, and 83.33% of them received the  treatment. The data demonstrates that the treatment is not effective for drug users.  
 
 # Overall Results and Conclusions
